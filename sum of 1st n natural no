@@ -1,0 +1,19 @@
+public class sumofnnaturalno {
+    
+    public static void sumNumbers(int n,int i , int sum){
+
+           if(i == n){
+               sum += i;
+               System.out.println(sum);
+               return;
+           }
+           
+            sum += i;
+           sumNumbers(n, i+1, sum);   
+          
+    }
+    public static void main(String args[]){
+     sumNumbers(5,1,0);
+
+    }
+}
